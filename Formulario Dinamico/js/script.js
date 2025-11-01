@@ -18,7 +18,6 @@ document.getElementById("choice").addEventListener("change", function() {
     additionalFields.classList.add("active");
     submitBtn.style.display = "block";
     
-    // Generar campos según la selección
     if (value === "books") {
         additionalFields.innerHTML = `
             <div class="form-group">
@@ -101,7 +100,6 @@ document.getElementById("choice").addEventListener("change", function() {
     }
 });
 
-// Event listener para el envío del formulario
 document.getElementById("dynamicForm").addEventListener("submit", function(event) {
     event.preventDefault();
     
@@ -109,7 +107,6 @@ document.getElementById("dynamicForm").addEventListener("submit", function(event
     const resultsContainer = document.getElementById("results");
     const resultsContent = document.getElementById("resultsContent");
     
-    // Recopilar datos según la categoría seleccionada
     let formData = {
         categoria: choice
     };
@@ -139,7 +136,6 @@ document.getElementById("dynamicForm").addEventListener("submit", function(event
         formData.genero = document.getElementById("gameGenre").value || "No especificado";
     }
     
-    // Mostrar resultados
     resultsContent.innerHTML = "";
     for (let key in formData) {
         resultsContent.innerHTML += `<p><strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${formData[key]}</p>`;
@@ -149,6 +145,5 @@ document.getElementById("dynamicForm").addEventListener("submit", function(event
     
     console.log("Datos del formulario:", formData);
     
-    // Scroll suave hacia los resultados
     resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 });
