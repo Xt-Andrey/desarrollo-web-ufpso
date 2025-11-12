@@ -1,0 +1,29 @@
+MOBILE LAYOUT (320px - 768px)
+├── HEADER FIJADO
+│   ├── Logo (Andrey & Arnol) - versión móvil
+│   ├── Hamburger menu icon
+│   └── Menú desplegable móvil
+│
+├── HERO SECTION
+│   ├── Imagen/título principal
+│   ├── Call-to-action principal
+│   └── Scroll indicator
+│
+├── PRODUCTOS SECTION
+│   ├── Grid 1-columna
+│   ├── Cards optimizadas para touch
+│   └── Swipe functionality
+│
+├── NOSOTROS Section
+│   ├── Historia breve
+│   ├── Imagen del equipo
+│   └── Valores
+│
+├── LOGIN Access
+│   ├── Botón login destacado
+│   └── Formulario modal móvil
+│
+└── FOOTER Mobile
+    ├── Contactos stack vertical
+    ├── Redes sociales
+    └── Derechos reservados
